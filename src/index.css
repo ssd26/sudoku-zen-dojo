@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #FFF8F0;
+  --color-blush: #FFE4E1;
+  --color-lavender: #E6E0F3;
+  --color-mint: #D4EDDA;
+  --color-sky: #D6EAF8;
+  --color-peach: #FFDAB9;
+  --color-rose: #F8C8D4;
+  --color-sage: #C7DFC5;
+  --color-warm-gray: #9B8F8F;
+  --color-deep-plum: #4A3B5C;
+  --color-soft-charcoal: #3D3D3D;
+
+  --font-sans: 'Nunito', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cream text-soft-charcoal font-sans antialiased;
+    margin: 0;
+    min-height: 100vh;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+}
